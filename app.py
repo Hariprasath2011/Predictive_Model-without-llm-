@@ -5,8 +5,8 @@ import pandas as pd
 
 st.title("Construction Time & Cost Prediction")
 
-pre = joblib.load("models/preprocessor.pkl")
-model = joblib.load("models/lgbm.pkl")
+pre = joblib.load("preprocessor.pkl")
+model = joblib.load("lgbm.pkl")
 
 inputs = {}
 inputs["land_size"] = st.number_input("Land Size(in -sq.ft)", 0)
